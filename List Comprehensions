@@ -1,0 +1,18 @@
+X = int(input())
+Y= int(input())
+Z = int(input())
+N = int(input())
+xL = [i for i in range(X+1)]
+yL = [i for i in range(Y+1)]
+zL = [i for i in range(Z+1)]
+l=[]
+
+results = []
+for x in xL:
+    for y in yL:
+        for z in zL:
+            l.append([x,y,z])
+
+m = [a for a in l if sum(a) != N]
+
+print (m)
