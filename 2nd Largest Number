@@ -1,0 +1,10 @@
+n = int(input())
+arr = map(int, input().split())
+A = list(map(int, arr))
+n = max(A)
+k1 = list()
+for i in range(len(A)):
+    if n != A[i]:
+        k1.append(A[i])
+y = max(k1)
+print (y)
