@@ -1,0 +1,21 @@
+L = []
+N = int(input())
+for k in range(N):
+    s = input().strip()
+    arg = s.split(" ")
+    command = arg[0]
+    print(arg)
+    if command == 'print':
+        print(L)
+    if command == 'insert':
+        L.insert(int(arg[1]),int(arg[2]))
+    if command == 'remove':
+        L.remove(int(arg[1]))
+    if command == 'append':
+        L.append(int(arg[1]))
+    if command == 'sort':
+        L.sort()
+    if command == 'pop':
+        L.pop()
+    if command == 'reverse':
+        L.reverse()
